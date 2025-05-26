@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> De Mannu para Victor </title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center;
+            background-color: #fce4ec; 
+            padding: 50px;
+        }
+        h1 { color: #ff4081; }
+        p { font-size: 18px; color: #333; }
+        button { 
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>💙 para meu bebe dodói 💙</h1>
+    <p id="mensagem">Clique no botão para ver uma mensagem especial!</p>
+    <button onclick="mostrarMensagem()">💌 Receber Mensagem 💌</button>
+
+    <script>
+        const mensagens = [
+            "Mesmo vc me irritando, eu te amooo! ",
+            "amo tu bebe ",
+            "Eu te amo mais! ",
+            "É, eu amo mais ",
+            "Você é meu melhor amigo e o amor da minha vida! ",
+            "Se eu pudesse escolher de novo, escolheria você sempre",
+            "Meu coração é seu, para sempre "
+        ];
+
+        function mostrarMensagem() {
+            let mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
+            document.getElementById("mensagem").innerText = mensagemAleatoria;
+        }
+    </script>
+</body>
+</html>
